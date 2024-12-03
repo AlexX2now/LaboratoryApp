@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="652cba10fa4f4f6d8fc981e461fcc720" Name="Diagram1">
+        <EntityTypeShape EntityType="labModel.services_" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.users_" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.Биоматериалы" Width="1.5" PointX="10" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.Данные_о_работе_анализатора" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.Данные_о_страховых_компаниях" Width="1.5" PointX="7.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.Данные_пациентов" Width="1.5" PointX="10" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.Заказ" Width="1.5" PointX="12.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.История_входа" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.Оказанная_услуга" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.Профессии" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.Страховой_полис" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.Услуги_лаборатории" Width="1.5" PointX="14.5" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="labModel.Услуги_" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <AssociationConnector Association="labModel.FK_services__users_" ManuallyRouted="false" />
+        <AssociationConnector Association="labModel.FK_services__Услуги_" ManuallyRouted="false" />
+        <AssociationConnector Association="labModel.FK_users__Профессии" ManuallyRouted="false" />
+        <AssociationConnector Association="labModel.FK_История_входа_users_" ManuallyRouted="false" />
+        <AssociationConnector Association="labModel.FK_Оказанная_услуга_users_" ManuallyRouted="false" />
+        <AssociationConnector Association="labModel.FK_Заказ_Биоматериалы" ManuallyRouted="false" />
+        <AssociationConnector Association="labModel.FK_Оказанная_услуга_Данные_о_работе_анализатора" ManuallyRouted="false" />
+        <AssociationConnector Association="labModel.FK_Данные_пациентов_Данные_о_страховых_компаниях" ManuallyRouted="false" />
+        <AssociationConnector Association="labModel.FK_Данные_пациентов_Страховой_полис" ManuallyRouted="false" />
+        <AssociationConnector Association="labModel.FK_Заказ_Данные_пациентов" ManuallyRouted="false" />
+        <AssociationConnector Association="labModel.FK_Услуги_лаборатории_Заказ" ManuallyRouted="false" />
+        <AssociationConnector Association="labModel.FK_Оказанная_услуга_Услуги_" ManuallyRouted="false" />
+        <AssociationConnector Association="labModel.FK_Услуги_лаборатории_Услуги_" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

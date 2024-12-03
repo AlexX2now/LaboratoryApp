@@ -1,0 +1,42 @@
+﻿<Window x:Class="lab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab"
+        mc:Ignorable="d"
+        Icon="pack://application:,,,/images/icon/logo.ico"
+        Title="Вход в систему" Height="600" Width="400">
+    <Grid x:Name="authwindow">
+        <Label Content="Вход" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="53" Width="98" FontFamily="Comic Sans MS" FontSize="35"/>
+        <TextBox x:Name="login" Text="" HorizontalAlignment="Center" Margin="0,155,0,0" VerticalAlignment="Top" Width="210" Height="37" FontSize="21" FontFamily="Comic Sans MS"/>
+        <Label Content="Логин" HorizontalAlignment="Center" Margin="0,119,0,0" VerticalAlignment="Top" Height="36" Width="98" FontFamily="Comic Sans MS" FontSize="21"/>
+        <TextBox x:Name="passwordvis" HorizontalAlignment="Center" Margin="0,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Height="37" FontSize="21" FontFamily="Comic Sans MS" Visibility="Hidden"/>
+        <Label Content="Пароль" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="36" Width="98" FontFamily="Comic Sans MS" FontSize="21"/>
+        <Button x:Name="authbtn" Content="Войти " HorizontalAlignment="Center" Margin="0,477,0,0" VerticalAlignment="Top" Width="210" Height="37" FontSize="21" FontFamily="Comic Sans MS" Background="#FF498C50" Foreground="White" Click="authbtn_Click"/>
+        <TextBox x:Name="capin" HorizontalAlignment="Center" Margin="0,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Height="37" FontSize="21" FontFamily="Comic Sans MS" Visibility="Hidden"/>
+        <Label x:Name="caplabel" Content="Введите капчу" HorizontalAlignment="Center" Margin="0,306,0,0" VerticalAlignment="Top" Height="36" Width="160" FontFamily="Comic Sans MS" FontSize="21" Visibility="Hidden"/>
+        <Label x:Name="cap" HorizontalAlignment="Left" Margin="117,358,0,0" VerticalAlignment="Top" Height="36" Width="160" FontFamily="Comic Sans MS" FontSize="21" HorizontalContentAlignment="Center" Visibility="Hidden" FontWeight="Bold" FontStyle="Italic">
+            <Label.Template>
+                <ControlTemplate TargetType="Label">
+                    <Border Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    Padding="{TemplateBinding Padding}">
+                        <TextBlock Text="{TemplateBinding Content}" TextDecorations="Strikethrough"/>
+                    </Border>
+                </ControlTemplate>
+            </Label.Template>
+            <Label.Effect>
+                <BlurEffect RenderingBias="Quality" Radius="3"/>
+            </Label.Effect>
+            <Label.FocusVisualStyle>
+                <Style/>
+            </Label.FocusVisualStyle>
+        </Label>
+        <Button x:Name="showpass" Content="*" Background="#FF498C50" HorizontalAlignment="Center" Margin="300,253,0,0" VerticalAlignment="Top" Width="37" Height="37" FontFamily="Comic Sans MS" Foreground="White" FontSize="30" Click="showpass_Click"/>
+        <PasswordBox x:Name="passwordnovis" Password="" HorizontalAlignment="Center" Margin="0,253,0,0" VerticalAlignment="Top" Width="210" Height="37" FontSize="21" FontFamily="Comic Sans MS"/>
+        <Button x:Name="capchan" Content="Поменять капчу" Background="#FF498C50" HorizontalAlignment="Center" Margin="200,358,0,0" VerticalAlignment="Top" Height="37" Foreground="White" FontFamily="Comic Sans MS" Visibility="Hidden" Click="capchan_Click"/>
+
+    </Grid>
+</Window>

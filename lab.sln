@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab", "lab.csproj", "{7F5EB9CF-7917-4741-986C-B6FCEF7AC992}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mail_LIB", "..\Mail_LIB\Mail_LIB.csproj", "{2C4A15A2-2E6A-4D31-87B6-D1986E0676C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F5EB9CF-7917-4741-986C-B6FCEF7AC992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5EB9CF-7917-4741-986C-B6FCEF7AC992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F5EB9CF-7917-4741-986C-B6FCEF7AC992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5EB9CF-7917-4741-986C-B6FCEF7AC992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4A15A2-2E6A-4D31-87B6-D1986E0676C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4A15A2-2E6A-4D31-87B6-D1986E0676C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4A15A2-2E6A-4D31-87B6-D1986E0676C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4A15A2-2E6A-4D31-87B6-D1986E0676C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE5BAA57-1847-4ADD-B13B-6973B8F94EC1}
+	EndGlobalSection
+EndGlobal
